@@ -1,0 +1,27 @@
+.recipes {
+  @include flex($direction: column);
+
+  @media #{$from-medium} {
+    @include flex;
+  }
+}
+
+.recipe {
+  width: 80%;
+  margin: 20px;
+
+  img {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  @media #{$from-medium} {
+    width: 20%;
+    margin: 20px;
+
+    img {
+      height: 200px;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+$fancy-font: 'Playfair Display', sans-serif;
+$body-font: 'Quattrocento Sans', serif;
+$header-font: $body-font;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+p,
+li,
+ul {
+  font-family: $body-font;
+  line-height: 1.4;
+}
+
+ol,
+ul {
+  padding-left: 0;
+
+  li {
+    line-height: 2;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: $colour-primary;
+}
+
+.fancy-font {
+  font-family: $fancy-font;
+}
+
+.link {
+  border-bottom: solid 1px $colour-black;
+
+  &:hover {
+    border-bottom: solid 1px $colour-primary;
+  }
+}

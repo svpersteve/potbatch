@@ -1,0 +1,9 @@
+.facts {
+  font-family: $body-font;
+  @include flex;
+  text-align: center;
+
+  .fact {
+    margin: 20px;
+  }
+}

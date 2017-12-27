@@ -1,0 +1,21 @@
+.navbar {
+  @include flex($justify-content: space-between);
+  padding: 0 20px;
+  border-bottom: solid 1px black;
+
+  i {
+    font-size: 26px;
+  }
+
+  h1, h2 {
+    font-family: $body-font;
+  }
+
+  a {
+    border: 0;
+  }
+
+  .navbar__menu-item {
+    margin-left: 20px;
+  }
+}

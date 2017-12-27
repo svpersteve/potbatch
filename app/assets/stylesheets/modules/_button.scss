@@ -1,0 +1,20 @@
+.button {
+  border: 0;
+  display: inline-block;
+  background-color: $colour-button;
+  color: $colour-white;
+  padding: 8px 35px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-family: $body-font;
+  font-size: 20px;
+
+  i {
+    color: white;
+  }
+
+  &:hover {
+    background-color: $colour-button-hover;
+    color: $colour-white;
+  }
+}

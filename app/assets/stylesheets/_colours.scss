@@ -1,0 +1,9 @@
+$colour-black: #000000;
+$colour-white: #ffffff;
+$colour-purple: #5514a4;
+
+$colour-primary: $colour-purple;
+$colour-primary-light: lighten($colour-primary, 55%);
+
+$colour-button: $colour-black;
+$colour-button-hover: $colour-primary;

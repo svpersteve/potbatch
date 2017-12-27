@@ -1,0 +1,18 @@
+img {
+  width: 100%;
+  border-radius: 1%;
+}
+
+footer {
+  font-family: $body-font;
+  @include flex($direction: column);
+  padding: 20px;
+  background-color: $colour-primary-light;
+  border-top: solid 1px $colour-primary;
+}
+
+textarea,
+input[type='text'] {
+  width: 100%;
+  margin: 10px 0;
+}
