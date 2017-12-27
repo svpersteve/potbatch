@@ -1,0 +1,24 @@
+<% set_page_title @recipe.title %>
+<% set_page_description @recipe.description %>
+
+<div class='page-margin page-margin--standard'>
+  <div class="align-center">
+    <h1 class="fancy-font"><%= @recipe.title %></h1>
+    <%= image_tag @recipe.image_url %>
+  </div>
+
+  <div class='facts'>
+    <span class='fact'>Prep time <br><%= @recipe.prep_time %></span>
+    <span class='fact'>Cooking time <br><%= @recipe.cooking_time %></span>
+    <span class='fact'>Serves <br><%= @recipe.serves %></span>
+  </div>
+
+  <h2>Ingredients</h2>
+  <%= simple_format @recipe.ingredients %>
+
+  <h2>Preparation</h2>
+  <%= simple_format @recipe.preparation %>
+
+  <h2>Directions</h2>
+  <%= simple_format @recipe.directions %>
+</div>

@@ -1,0 +1,19 @@
+<% set_page_title 'Home' %>
+<% set_page_description 'Effortless nutrition every day - save time and money batch making meals with Instant Pot.' %>
+
+<div class='page-margin page-holder'>
+
+  <h2 class='align-center'>Effortless nutrition every day</h2>
+  <p class='align-center'>Save time and money batch making meals with <%= link_to 'Instant Pot', instant_pot_link, target: '__blank', class: 'link' %>.</p>
+
+  <div class="recipes">
+    <% @recipes.each do |recipe| %>
+      <div class="recipe">
+        <%= link_to recipe_path(recipe) do %>
+          <%= image_tag recipe.image_url %>
+          <h2><%= recipe.title %></h2>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

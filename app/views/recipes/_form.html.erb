@@ -1,0 +1,21 @@
+<div class='page-margin page-margin--standard'>
+  <%= form_for recipe do |f| %>
+    <%= f.text_field :title, placeholder: 'Title' %>
+    <br>
+    <%= f.text_field :prep_time, placeholder: 'Preparation time' %>
+    <br>
+    <%= f.text_field :cooking_time, placeholder: 'Cooking time' %>
+    <br>
+    <%= f.text_field :serves, placeholder: 'Number of servings' %>
+    <br>
+    <%= f.text_area :ingredients, placeholder: 'Ingredients', rows: 10 %>
+    <br>
+    <%= f.text_area :preparation, placeholder: 'Preparation', rows: 10 %>
+    <br>
+    <%= f.text_area :directions, placeholder: 'Directions', rows: 10 %>
+    <br>
+    <%= f.text_field :image_url, placeholder: 'Image URL' %>
+    <br>
+    <%= f.submit 'Save', class: 'button' %>
+  <% end %>
+</div>
