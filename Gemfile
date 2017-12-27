@@ -23,6 +23,7 @@ group :development, :test do
   gem 'rspec-activemodel-mocks', '>= 1.0.2'
   gem 'rspec-collection_matchers'
   gem 'rspec-rails', '~> 3.7.0'
+  gem 'dotenv'
 end
 
 group :development do
