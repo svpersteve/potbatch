@@ -13,11 +13,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'friendly_id'
+gem 'factory_bot', '~> 4.8.0', require: false
 
 group :development, :test do
   gem 'pry'
   gem 'capybara', '~> 2.13'
-  gem 'rails-controller-testing', '1.0.1', require: false
+  gem 'rails-controller-testing'
   gem 'rspec-activemodel-mocks', '>= 1.0.2'
   gem 'rspec-collection_matchers'
   gem 'rspec-rails', '~> 3.7.0'
